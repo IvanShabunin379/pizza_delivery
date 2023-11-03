@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a6jKSEVmvCnCQzqAljF4NbYrFRNWkzL22qGnA88s4zfYmMM8wdesD1GeimZ7gPyDS1DAP5bugg5vEube6UCWOg==",
+  "dgSpecHash": "2ZKBiyvQyfn72FaS3UREeRBgNfA8dOtX5or5ntcnlqIk/NRHVyjYLe0rj3fK6dHtMV7ZEZ4CobfSTonY16Z7Zg==",
   "success": true,
-  "projectFilePath": "D:\\PizzaDelivery\\pizza_delivery\\PizzaDelivery\\PizzaDelivery.WebAPI\\PizzaDelivery.WebAPI.csproj",
+  "projectFilePath": "D:\\dotNetProject\\pizza_delivery\\PizzaDelivery\\PizzaDelivery.WebAPI\\PizzaDelivery.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vanya\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "C:\\Users\\vanya\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
