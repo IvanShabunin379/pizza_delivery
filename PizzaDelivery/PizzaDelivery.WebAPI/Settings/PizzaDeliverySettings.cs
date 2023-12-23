@@ -2,6 +2,6 @@
 {
     public class PizzaDeliverySettings
     {
-        //здесь будут приложения, например, строка подключения к бд
+        public string? PizzaDeliveryDbContextConnectionString { get; set; }
     }
 }

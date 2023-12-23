@@ -4,8 +4,10 @@
     {
         public static PizzaDeliverySettings Read(IConfiguration configuration)
         {
-            //здесь будет чтение настроек приложения из конфига
-            return new PizzaDeliverySettings();
+            return new PizzaDeliverySettings()
+            {
+                PizzaDeliveryDbContextConnectionString = configuration.GetValue<string>("PizzaDeliveryDbContext")
+            };
         }
     }
 }
