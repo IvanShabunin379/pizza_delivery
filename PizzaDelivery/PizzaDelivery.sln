@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaDelivery.BL", "PizzaDe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaDelivery.DataAccess", "PizzaDelivery.DataAccess\PizzaDelivery.DataAccess.csproj", "{42B3511E-BE9C-4FE9-A439-A698CCDE6833}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaDelivery.UnitTest", "PizzaDelivery.UnitTest\PizzaDelivery.UnitTest.csproj", "{D319D695-F9EA-437B-A85A-EB39D5DB7842}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaDelivery.UnitTest", "PizzaDelivery.UnitTest\PizzaDelivery.UnitTest.csproj", "{D319D695-F9EA-437B-A85A-EB39D5DB7842}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
