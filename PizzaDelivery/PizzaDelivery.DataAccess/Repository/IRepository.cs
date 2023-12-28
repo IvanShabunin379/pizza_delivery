@@ -6,9 +6,9 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PizzaDelivery.DataAccess
+namespace PizzaDelivery.DataAccess.Repository
 {
-    public interface IRepository<T> where T : BaseEntity
+    public interface IRepository<T> where T : class, IBaseEntity
     {
         IEnumerable<T> GetAll();
         IEnumerable<T> GetAll(Expression<Func<T, bool>> filter);

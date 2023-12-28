@@ -6,7 +6,11 @@
         {
             return new PizzaDeliverySettings()
             {
-                PizzaDeliveryDbContextConnectionString = configuration.GetValue<string>("PizzaDeliveryDbContext")
+                ServiceUri = configuration.GetValue<Uri>("Uri"),
+                PizzaDeliveryDbContextConnectionString = configuration.GetValue<string>("PizzaDeliveryDbContext"),
+                IdentityServerUri = configuration.GetValue<string>("IdentityServerSettings:Uri"),
+                ClientId = configuration.GetValue<string>("IdentityServerSettings:ClientId"),
+                ClientSecret = configuration.GetValue<string>("IdentityServerSettings:ClientSecret"),
             };
         }
     }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PizzaDelivery.DataAccess.Entities
 {
-    public abstract class BaseEntity
+    public abstract class BaseEntity : IBaseEntity
     {
         [Key]
         public int Id { get; set; } //ключ в бд

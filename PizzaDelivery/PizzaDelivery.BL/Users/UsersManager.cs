@@ -1,12 +1,12 @@
 ﻿using PizzaDelivery.BL.Users.Entities;
 using PizzaDelivery.DataAccess.Entities;
-using PizzaDelivery.DataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using PizzaDelivery.DataAccess.Repository;
 
 namespace PizzaDelivery.BL.Users
 {

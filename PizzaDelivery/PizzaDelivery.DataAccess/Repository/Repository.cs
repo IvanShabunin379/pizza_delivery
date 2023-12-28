@@ -7,9 +7,9 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PizzaDelivery.DataAccess
+namespace PizzaDelivery.DataAccess.Repository
 {
-    public class Repository<T> : IRepository<T> where T : BaseEntity
+    public class Repository<T> : IRepository<T> where T : class, IBaseEntity
     {
         public Repository(IDbContextFactory<PizzaDeliveryDbContext> contextFactory)
         {

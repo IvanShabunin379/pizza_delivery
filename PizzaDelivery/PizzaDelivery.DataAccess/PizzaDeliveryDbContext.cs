@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using PizzaDelivery.DataAccess.Entities;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,13 @@ namespace PizzaDelivery.DataAccess
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<IdentityUserClaim<int>>().ToTable("user_claims");
+            modelBuilder.Entity<IdentityUserLogin<int>>().ToTable("user_logins").HasNoKey();
+            modelBuilder.Entity<IdentityUserToken<int>>().ToTable("user_tokens").HasNoKey(); ;
+            modelBuilder.Entity<UserRoleEntity>().ToTable("user_roles");
+            modelBuilder.Entity<IdentityRoleClaim<int>>().ToTable("user_role_claims");
+            modelBuilder.Entity<IdentityUserRole<int>>().ToTable("user_role_owners").HasNoKey();
+
             modelBuilder.Entity<UserEntity>()
                  .HasMany(user => user.Orders)
                  .WithOne(order => order.User);

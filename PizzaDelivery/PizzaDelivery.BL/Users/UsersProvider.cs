@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using PizzaDelivery.BL.Users.Entities;
 using PizzaDelivery.DataAccess.Entities;
-using PizzaDelivery.DataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PizzaDelivery.DataAccess.Repository;
 
 namespace PizzaDelivery.BL.Users
 {
@@ -19,15 +19,15 @@ namespace PizzaDelivery.BL.Users
         {
             string? name = modelFilter?.Name;
             string? surname = modelFilter?.Surname;
-            int? minRentCount = modelFilter?.MinOrdersCount;
-            int? maxRentCount = modelFilter?.MaxOrdersCount;
+            int? minOrdersCount = modelFilter?.MinOrdersCount;
+            int? maxOrdersCount = modelFilter?.MaxOrdersCount;
             bool? isAdmin = modelFilter?.IsAdmin;
 
             var users = _repository.GetAll(user => (
             (name == null || user.Name.Contains(name, StringComparison.OrdinalIgnoreCase)) &&
             (surname == null || user.Surname.Contains(surname, StringComparison.OrdinalIgnoreCase)) &&
-            (minRentCount == null || user.Orders != null && user.Orders.Count >= minRentCount) &&
-            (maxRentCount == null || user.Orders != null && user.Orders.Count <= maxRentCount) &&
+            (minOrdersCount == null || user.Orders != null && user.Orders.Count >= minOrdersCount) &&
+            (maxOrdersCount == null || user.Orders != null && user.Orders.Count <= maxOrdersCount) &&
             (isAdmin == null || user.IsAdmin)
             ));
 

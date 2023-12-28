@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PizzaDelivery.DataAccess;
 using PizzaDelivery.BL;
 using PizzaDelivery.BL.Orders.Entities;
 using PizzaDelivery.DataAccess.Entities;
 using static PizzaDelivery.DataAccess.Entities.OrderEntity;
+using PizzaDelivery.DataAccess.Repository;
 
 namespace OrderDelivery.BL.Orders
 {

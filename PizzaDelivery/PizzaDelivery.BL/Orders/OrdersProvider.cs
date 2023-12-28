@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using PizzaDelivery.DataAccess.Entities;
 using PizzaDelivery.BL.Orders.Entities;
-using PizzaDelivery.DataAccess;
 using PizzaDelivery.BL;
 using static PizzaDelivery.DataAccess.Entities.OrderEntity;
+using PizzaDelivery.DataAccess.Repository;
 
 namespace OrderDelivery.BL.Orders
 {
